@@ -7,7 +7,6 @@ export function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/props' element={<ProspPage />} />
       </Routes>
     </BrowserRouter>
   )
