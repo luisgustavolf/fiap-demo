@@ -1,4 +1,4 @@
-import { Button, CssBaseline, ThemeProvider } from '@mui/material'
+import { CssBaseline, ThemeProvider } from '@mui/material'
 import React from 'react'
 import { FIAPTheme } from './configs/mui/theme'
 
