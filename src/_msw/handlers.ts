@@ -1,5 +1,7 @@
-import { LoginHandler } from "./handlers/login";
+import { classesHandlers } from "./handlers/classes/handlers";
+import { loginHandlers } from "./handlers/login/login";
 
 export const handlers = [
-  LoginHandler
+  ...loginHandlers,
+  ...classesHandlers
 ]

@@ -1,7 +1,7 @@
 import { delay, http, HttpResponse } from 'msw'
-import { ILoginBody } from './iLoginBody'
+import { ILoginBody } from '../login/iLoginBody'
 
-export const LoginHandler = http.post('/login', async (info) => {
+const loginHandler = http.post('/login', async (info) => {
   const body = (await info.request.json()) as ILoginBody
   
   await delay()
@@ -12,3 +12,7 @@ export const LoginHandler = http.post('/login', async (info) => {
 
   return new HttpResponse(null, { status: 422 })
 }, {})
+
+export const loginHandlers = [
+  loginHandler
+]
